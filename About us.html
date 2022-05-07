@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            About Us
+        </title>
+        <link href="/img/R.png" rel="shortcut icon">
+        <link href="/css/About us.css" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/update.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="home.html">RECIPES</a>
+                    <span id="divide">|</span>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li ><a class="nav-elementts" href="home.html#section1">HOME</a></li>
+                        <li ><a class="nav-elementts" href="home.html#section2">RECIPES</a></li>
+                        <li ><a class="nav-elementts" href="home.html#section3">CONTACT US</a></li>
+                        <li ><a class="nav-elementts" href="About us.html">ABOUT US</a></li>
+                    </div>
+                  </div>
+                </nav>
+              </header>
+        
+        <div class="aboutus-section">
+                <div class="container">
+                    <div class="row">
+                            <div class="aboutus">
+                                <h2 class="aboutus-title">About Us</h2>
+                                <p class="aboutus-text">Recipes are here to help you cook delicious meals with less stress and more joy. We offer recipes and cooking advice for home cooks, by home cooks. Helping create “kitchen wins” is what we’re all about.</p>
+                                <p class="aboutus-text">Recipes has grown into a trusted resource for home cooks with more than 3,000 tested recipes, guides, and meal plans, drawing over 15 million readers each month from around the world. We’re supported by a diverse group of recipe developers, food writers, recipe and product testers, photographers, and other creative professionals.</p>
+                                <p class="aboutus-text hiddenText">Our recipes primarily use fresh, unprocessed ingredients but we also believe there is a time and a place for canned, frozen, and other prepared ingredients. We believe in a diet that includes a wide variety of foods: real butter and cream, extra virgin olive oil, eggs, lots of fruits and vegetables, and protein from meat, fish, beans, and cheese. Plus cake for dessert.</p>
+                                <p class="aboutus-text hiddenText">To make sure each of these standards is met, we start by working with expert recipe developers  — people with the experience and knowledge to not only develop a good recipe in their own kitchens, but to make sure that recipe works in yours. Next, we thoroughly review and edit every recipe in-house line by line. Finally, each new recipe is run by our team of recipe testers working in home kitchens with the same pots, pans, and tools that you use in yours</p>
+                                <button class="aboutus-more" onclick="ShowMore()" id="link">Read More</button>
+                                <button class="aboutus-more" onclick="ShowLess()" id="link2">Read Less</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>
+                  © Copyright 2022 Team Web - All Rights Reserved
+                </p>
+                <span>
+                  <a class="footerIcons" target="_blank" href="https://www.facebook.com/ahmed.hessain.351/"><i class="fa fa-brands fa-facebook">a</i></a>
+                  <a class="footerIcons" target="_blank" href="https://chat.whatsapp.com/HkGTUqpKMuj9GeOOf4O8qs"><i class="fa fa-brands fa-whatsapp"></i></a>
+                  <a class="footerIcons" target="_blank" href="https://t.me/+-dd5K5zlSJ9mZDE0"><i class="fa fa-brands fa-telegram"></i></a>
+                </span>
+              </footer>
+
+            <script>
+                function ShowMore(){
+                    document.getElementsByClassName('hiddenText')[0].style.display="block";
+                    document.getElementsByClassName('hiddenText')[1].style.display="block";
+                    document.getElementById('link').style.display="none";
+                    document.getElementById('link2').style.display="block";
+                }
+                function ShowLess(){
+                    document.getElementsByClassName('hiddenText')[0].style.display="none";
+                    document.getElementsByClassName('hiddenText')[1].style.display="none";
+                    document.getElementById('link2').style.display="none";
+                    document.getElementById('link').style.display="block";
+                }
+            </script>
+            <script src="https://kit.fontawesome.com/11c6256d28.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>
