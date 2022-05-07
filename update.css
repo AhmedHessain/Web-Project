@@ -1,0 +1,238 @@
+header{
+    margin:0;
+    padding:0;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 200;
+}
+.navbar.navbar-default{
+    background-color: #bbea13 ;
+    margin:0;
+    border: 0;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    border-bottom-left-radius: 3;
+    border-bottom-right-radius: 3;
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0px 0px 1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#divide{
+    position:absolute;
+    top:15px;
+    opacity: .5;
+    margin-right: 2001px;
+}
+.navbar-header{
+    margin-right: 300px;
+}
+.nav.navbar-nav{
+    margin-left: 60vh;
+}
+.navbar-default .navbar-nav > li > a {
+    color: rgb(60, 46, 46);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10;
+    text-shadow: 0px 0px 1px;
+
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color: rgb(118, 100, 100);
+    border-bottom: 1px solid brown;
+    border-bottom-width: 1px;
+    border-radius: 3px;
+}
+main{
+    margin-top:50px;
+
+}
+.jumbotron{
+    background-image: url(/img/Nutrition-Blog-Default.png);
+    height: 100vh;
+    padding-top: 220px;
+    position: relative;
+    top:0;
+    margin:0;
+    background-color: transparent;
+}
+.jumbotron>h1{
+    margin:0;
+    background-color: rgb(0 0 0 / 30%);
+    padding-left: 30px;
+    color:white
+}
+.jumbotron>p{
+margin-left: 30px;
+}
+.jumbotron>#empty{
+    margin:0;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    background-color: rgb(0 0 0 / 30%);
+    color:white
+}
+#video-frame{
+    box-shadow: 0px 1px 2px black;
+    position: absolute;
+    left: 800px;
+    bottom: 260px;
+    border-radius: 20px;
+}
+.btn.btn-primary.btn-lg{
+    font-size: 21;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    border:1px solid white;
+    width: 300px;
+
+}
+.btn.btn-primary.btn-lg:hover{
+    color:rgb(0, 136, 255);
+    border: rgb(0, 136, 255);
+    background-color: white;
+}
+#section3-heading{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}   
+#section2{
+    background-color: #a1bb457d;
+    height: 100vh;
+    padding-top: 50px;
+}
+#container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+}
+.recipesimage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor:pointer;
+    margin-left: 15px;
+
+}
+.icons{
+    padding:30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
+.image-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    Letter-Spacing: 0.5px;
+    font-weight: 500;
+    text-align: center;
+    Color: #8b8b99;
+    position: relative;
+    left: -20px;
+}
+.images{
+    border-radius: 50%;
+    width: 200px;
+    height: 100px;
+}
+.recipesimage:hover .icons{
+    animation-name: scaling;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+@keyframes scaling {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.contact{
+    padding: 0%;
+    height: 400px;
+}
+.col-md-3{
+    background: #05386B;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 0%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.form-group{
+    padding:2%;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+.col-sm-offset-2.col-sm-10{
+    padding: .9%;
+}
+#section3{
+    background-color: #758c2449;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer{    
+    padding-top: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 33, 33);
+}
+footer>p{
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: .5;
+}
+footer span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerIcons{
+    width: 50px;
+    height: 50px;
+    color:white;
+}
